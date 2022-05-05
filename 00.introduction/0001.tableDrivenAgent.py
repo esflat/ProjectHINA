@@ -17,8 +17,10 @@ def table_driven_agent(input) :
     if input in rule.keys() :
         return rule[input]
     else :
-        return "undefined"
+        return "error"
 
-print(table_driven_agent(5))
-print(table_driven_agent(100))
-print(table_driven_agent(400))
+print(table_driven_agent(5))        # 5円硬貨を入れた時の動作
+print(table_driven_agent(100))      # 100円硬貨を入れた時の動作
+print(table_driven_agent(400))      # 400円硬貨はルール定義していないため、エラーが発生します
+
+# 上の例だと400円硬貨が発行された時、プログラムを変更しないとシステムは対応出来ない。
