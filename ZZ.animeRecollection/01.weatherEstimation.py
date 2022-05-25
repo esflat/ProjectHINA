@@ -8,7 +8,7 @@
 
 import requests
 
-# 気象庁 JSONデータ 山梨県 概要
+# 気象庁 JSONデータ 山梨県 概要/詳細
 response = requests.get("https://www.jma.go.jp/bosai/forecast/data/overview_forecast/190000.json")
 print(response.json())
 response = requests.get("https://www.jma.go.jp/bosai/forecast/data/forecast/190000.json")
